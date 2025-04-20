@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos Básicos em Álgebra Linear | IngeniumTech</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .math-container {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .nav-article {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-square-root-alt"></i> IngeniumTech</h1>
+            <nav>
+                <a href="../../index.html#home"><i class="fas fa-home"></i> Home</a>
+                <a href="../../index.html#artigos"><i class="fas fa-book"></i> Artigos</a>
+                <a href="../../index.html#videos"><i class="fas fa-video"></i> Vídeos</a>
+                <a href="../../index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="artigo-container">
+        <article>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > <a href="../../index.html#artigos">Artigos</a> > Matemática
+            </div>
+            
+            <h1>Conceitos Básicos em Álgebra Linear</h1>
+            <p class="meta"><i class="far fa-calendar-alt"></i> Publicado em: 08/07/2025 | <i class="fas fa-user-edit"></i> Autor: Equipe IngeniumTech</p>
+            
+            <section>
+                <p>A álgebra linear é uma área da matemática que lida com vetores, espaços vetoriais, transformações lineares e sistemas de equações lineares. É um campo essencial para várias disciplinas, incluindo matemática pura, física, engenharia e ciência da computação.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-vector-square"></i> Vetores e Espaços Vetoriais</h2>
+                <p>Os vetores são objetos fundamentais na álgebra linear. Um vetor pode ser visualizado como uma seta que tem direção e magnitude. Em termos algébricos, um vetor em \( \mathbb{R}^n \) é uma coleção de \( n \) números reais:</p>
+                <div class="math-container">
+                    \[
+                    \mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}
+                    \]
+                </div>
+                <p>Os espaços vetoriais são conjuntos de vetores que podem ser escalados e somados, obedecendo a certas regras. Eles são o ambiente onde a álgebra linear opera.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-th"></i> Matrizes e Determinantes</h2>
+                <p>Uma matriz é uma tabela retangular de números que pode representar um sistema de equações lineares ou uma transformação linear. Por exemplo, uma matriz \( A \) de ordem \( m \times n \) é escrita como:</p>
+                <div class="math-container">
+                    \[
+                    A = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}
+                    \]
+                </div>
+                <p>O determinante de uma matriz quadrada é um número que pode ser calculado a partir dos elementos da matriz e tem várias aplicações, incluindo a determinação da invertibilidade da matriz.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-exchange-alt"></i> Transformações Lineares</h2>
+                <p>Transformações lineares são funções entre espaços vetoriais que preservam operações de adição e multiplicação por escalar. Se \( T: \mathbb{R}^n \to \mathbb{R}^m \) é uma transformação linear, então para vetores \( \mathbf{u}, \mathbf{v} \) e escalar \( c \), temos:</p>
+                <ul>
+                    <li>\( T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v}) \)</li>
+                    <li>\( T(c \mathbf{u}) = c T(\mathbf{u}) \)</li>
+                </ul>
+                <p>Essas transformações podem ser representadas por matrizes, facilitando sua análise e aplicação.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-superscript"></i> Autovalores e Autovetores</h2>
+                <p>Os autovalores e autovetores de uma matriz são conceitos fundamentais na álgebra linear, usados para entender as propriedades das transformações lineares. Se \( A \) é uma matriz, um vetor \( \mathbf{v} \) é um autovetor de \( A \) se:</p>
+                <div class="math-container">
+                    \[
+                    A\mathbf{v} = \lambda \mathbf{v}
+                    \]
+                </div>
+                <p>Onde \( \lambda \) é o autovalor correspondente. Estes conceitos são cruciais em diversas aplicações, como a estabilidade de sistemas dinâmicos e em processamento de sinais.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-check-circle"></i> Conclusão</h2>
+                <p>A álgebra linear é uma área rica e versátil da matemática que fornece ferramentas poderosas para a modelagem e resolução de problemas em diversas disciplinas. Compreender seus conceitos básicos é essencial para qualquer estudante ou profissional que deseje aprofundar-se em matemática aplicada e suas aplicações práticas.</p>
+            </section>
+
+            <div class="nav-article">
+                <a href="../../index.html" class="btn"><i class="fas fa-home"></i> Voltar à Home</a>
+                <a href="../../index.html#videos" class="btn btn-primary">Assistir Vídeos Relacionados</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="../../index.html#artigos">Todos os Artigos</a></li>
+                    <li><a href="../../index.html#videos">Vídeos Educativos</a></li>
+                    <li><a href="../../index.html#sobre">Sobre o Projeto</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Aprenda. Pratique. Evolua. © 2025 - Compartilhando conhecimento em engenharia e matemática.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

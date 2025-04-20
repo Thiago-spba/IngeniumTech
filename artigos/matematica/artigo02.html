@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perda de Carga em Sistemas de Fluxo | IngeniumTech</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .math-container {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .nav-article {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: #3498db;
+            color: white;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-square-root-alt"></i> IngeniumTech</h1>
+            <nav>
+                <a href="../../index.html#home"><i class="fas fa-home"></i> Home</a>
+                <a href="../../index.html#artigos"><i class="fas fa-book"></i> Artigos</a>
+                <a href="../../index.html#videos"><i class="fas fa-video"></i> Vídeos</a>
+                <a href="../../index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="artigo-container">
+        <article>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > <a href="../../index.html#artigos">Artigos</a> > Engenharia
+            </div>
+            
+            <h1>Perda de Carga Pontual e Distribuída: Entendendo as Perdas em Sistemas de Fluxo</h1>
+            <p class="meta"><i class="far fa-calendar-alt"></i> Publicado em: 09/07/2025 | <i class="fas fa-user-edit"></i> Autor: Equipe IngeniumTech</p>
+            
+            <section>
+                <p>No campo da hidráulica e da engenharia de fluidos, a análise da perda de carga é essencial para projetar sistemas de transporte de fluidos eficientes. Neste artigo, exploraremos os conceitos fundamentais de perda de carga pontual e distribuída, suas causas e implicações práticas.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-water"></i> O que é Perda de Carga?</h2>
+                <p>A perda de carga representa a energia dissipada pelo fluido devido a:</p>
+                <ul>
+                    <li>Atrito com as paredes da tubulação</li>
+                    <li>Turbulências em acessórios hidráulicos</li>
+                    <li>Mudanças na direção ou velocidade do fluxo</li>
+                </ul>
+                
+                <div class="comparison-table">
+                    <table>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Localização</th>
+                            <th>Principais Causas</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Pontual</strong></td>
+                            <td>Pontos específicos</td>
+                            <td>Válvulas, curvas, mudanças de seção</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Distribuída</strong></td>
+                            <td>Todo o comprimento</td>
+                            <td>Atrito fluido-tubo, rugosidade</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-bolt"></i> Perda de Carga Pontual</h2>
+                <p>Ocorre em pontos singulares do sistema:</p>
+                
+                <h3>Causas Principais:</h3>
+                <div class="math-container">
+                    <ul>
+                        <li><strong>Válvulas:</strong> Resistência ao fluxo (K<sub>válvula</sub> varia por tipo)</li>
+                        <li><strong>Curvas:</strong> Turbulência na mudança de direção</li>
+                        <li><strong>Mudanças de seção:</strong> Aceleração/desaceleração brusca</li>
+                    </ul>
+                </div>
+                
+                <h3>Equação Fundamental:</h3>
+                <div class="math-container">
+                    \[
+                    \Delta P = K \cdot \frac{\rho v^2}{2}
+                    \]
+                    <p>Onde:</p>
+                    <ul>
+                        <li>ΔP = Perda de carga (Pa)</li>
+                        <li>K = Coeficiente de perda (adimensional)</li>
+                        <li>ρ = Densidade do fluido (kg/m³)</li>
+                        <li>v = Velocidade do fluido (m/s)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-ruler-combined"></i> Perda de Carga Distribuída</h2>
+                <p>Perda contínua ao longo da tubulação:</p>
+                
+                <h3>Fórmula de Darcy-Weisbach:</h3>
+                <div class="math-container">
+                    \[
+                    \Delta P = f \cdot \frac{L}{D} \cdot \frac{\rho v^2}{2}
+                    \]
+                    <p>Onde:</p>
+                    <ul>
+                        <li>f = Fator de atrito (determinado pelo diagrama de Moody)</li>
+                        <li>L = Comprimento da tubulação (m)</li>
+                        <li>D = Diâmetro interno (m)</li>
+                    </ul>
+                </div>
+                
+                <h3>Fatores que Influenciam:</h3>
+                <div class="math-container">
+                    <ol>
+                        <li><strong>Rugosidade relativa (ε/D):</strong> Superfície interna do tubo</li>
+                        <li><strong>Número de Reynolds (Re):</strong> Regime de fluxo (laminar/turbulento)</li>
+                        <li><strong>Viscosidade do fluido:</strong> Resistência ao cisalhamento</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-tools"></i> Aplicações Práticas</h2>
+                <p>Como minimizar perdas em projetos:</p>
+                
+                <div class="math-container">
+                    <table>
+                        <tr>
+                            <th>Estratégia</th>
+                            <th>Redução de Perda</th>
+                        </tr>
+                        <tr>
+                            <td>Diâmetros adequados</td>
+                            <td>Até 40% na distribuída</td>
+                        </tr>
+                        <tr>
+                            <td>Curvas suaves (raio longo)</td>
+                            <td>Até 70% na pontual</td>
+                        </tr>
+                        <tr>
+                            <td>Válvulas de baixa resistência</td>
+                            <td>Até 90% em pontos críticos</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-check-circle"></i> Conclusão</h2>
+                <p>O domínio das perdas de carga permite:</p>
+                <ol>
+                    <li>Projetar sistemas hidráulicos mais eficientes</li>
+                    <li>Reduzir custos operacionais</li>
+                    <li>Otimizar consumo energético</li>
+                </ol>
+                <p>Esses conhecimentos são fundamentais para engenheiros mecânicos, civis e de processos.</p>
+            </section>
+
+            <div class="nav-article">
+                <a href="artigo01.html" class="btn"><i class="fas fa-arrow-left"></i> Artigo Anterior</a>
+                <a href="../../index.html#videos" class="btn btn-primary"><i class="fas fa-video"></i> Vídeos Relacionados</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Artigos Recentes</h3>
+                <ul>
+                    <li><a href="artigo01.html">Operador Nabla e Divergente</a></li>
+                    <li><a href="#">Perda de Carga (Atual)</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Aprenda. Pratique. Evolua. © 2025 - Compartilhando conhecimento em engenharia e matemática.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

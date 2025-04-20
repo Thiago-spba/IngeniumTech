@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regra de Cramer | IngeniumTech</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .math-container {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .nav-article {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-square-root-alt"></i> IngeniumTech</h1>
+            <nav>
+                <a href="../../index.html#home"><i class="fas fa-home"></i> Home</a>
+                <a href="../../index.html#artigos"><i class="fas fa-book"></i> Artigos</a>
+                <a href="../../index.html#videos"><i class="fas fa-video"></i> Vídeos</a>
+                <a href="../../index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="artigo-container">
+        <article>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > <a href="../../index.html#artigos">Artigos</a> > Matemática
+            </div>
+            
+            <h1>Regra de Cramer</h1>
+            <p class="meta"><i class="far fa-calendar-alt"></i> Publicado em: 08/07/2025 | <i class="fas fa-user-edit"></i> Autor: Equipe IngeniumTech</p>
+            
+            <section>
+                <p>A Regra de Cramer é um método explícito para resolver sistemas de equações lineares com tantas equações quanto incógnitas, utilizando determinantes. Este método é particularmente útil para sistemas de pequenas dimensões e fornece uma solução direta.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-th"></i> Como Funciona a Regra de Cramer?</h2>
+                <p>Considere um sistema linear de \( n \) equações com \( n \) incógnitas, representado na forma matricial \( A\mathbf{x} = \mathbf{b} \), onde \( A \) é uma matriz quadrada de ordem \( n \), \( \mathbf{x} \) é o vetor coluna de incógnitas e \( \mathbf{b} \) é o vetor coluna de termos constantes.</p>
+                <div class="math-container">
+                    \[
+                    A = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{bmatrix}, \quad \mathbf{x} = \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}, \quad \mathbf{b} = \begin{bmatrix} b_1 \\ b_2 \\ \vdots \\ b_n \end{bmatrix}
+                    \]
+                </div>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-cogs"></i> Aplicação da Regra de Cramer</h2>
+                <p>Para encontrar a solução do sistema, a Regra de Cramer utiliza determinantes. A solução para cada incógnita \( x_i \) é dada por:</p>
+                <div class="math-container">
+                    \[
+                    x_i = \frac{\det(A_i)}{\det(A)}
+                    \]
+                </div>
+                <p>Onde \( A_i \) é a matriz obtida substituindo a \( i \)-ésima coluna de \( A \) pelo vetor \( \mathbf{b} \).</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-exchange-alt"></i> Condições de Aplicação</h2>
+                <ul>
+                    <li><strong>Determinante Não Nulo:</strong> A Regra de Cramer só pode ser aplicada se \( \det(A) \neq 0 \). Isso garante que o sistema tem uma solução única.</li>
+                    <li><strong>Igualdade de Dimensões:</strong> O sistema deve ter tantas equações quanto incógnitas (sistema quadrado).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-check-circle"></i> Conclusão</h2>
+                <p>A Regra de Cramer é uma técnica eficaz para resolver sistemas lineares de pequenas dimensões, oferecendo uma solução direta através do uso de determinantes. Embora não seja prática para sistemas de grande escala, é uma ferramenta valiosa para compreender a relação entre determinantes e soluções de sistemas lineares.</p>
+            </section>
+
+            <div class="nav-article">
+                <a href="../../index.html" class="btn"><i class="fas fa-home"></i> Voltar à Home</a>
+                <a href="../../index.html#videos" class="btn btn-primary">Assistir Vídeos Relacionados</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="../../index.html#artigos">Todos os Artigos</a></li>
+                    <li><a href="../../index.html#videos">Vídeos Educativos</a></li>
+                    <li><a href="../../index.html#sobre">Sobre o Projeto</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Aprenda. Pratique. Evolua. © 2025 - Compartilhando conhecimento em engenharia e matemática.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

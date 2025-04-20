@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Euclidiano ℝⁿ | IngeniumTech</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .math-container {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .dimension-card {
+            border-left: 4px solid #3498db;
+            padding: 1rem;
+            margin: 1rem 0;
+            background-color: #f8fafc;
+        }
+        .nav-article {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-square-root-alt"></i> IngeniumTech</h1>
+            <nav>
+                <a href="../../index.html#home"><i class="fas fa-home"></i> Home</a>
+                <a href="../../index.html#artigos"><i class="fas fa-book"></i> Artigos</a>
+                <a href="../../index.html#videos"><i class="fas fa-video"></i> Vídeos</a>
+                <a href="../../index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="artigo-container">
+        <article>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > <a href="../../index.html#artigos">Artigos</a> > Matemática
+            </div>
+            
+            <h1>Conceito de Espaço Euclidiano ℝⁿ</h1>
+            <p class="meta"><i class="far fa-calendar-alt"></i> Publicado em: 11/07/2025 | <i class="fas fa-user-edit"></i> Autor: Equipe IngeniumTech</p>
+            
+            <section>
+                <p>O espaço euclidiano ℝⁿ é um conceito fundamental na matemática, especialmente na geometria e na análise. Ele fornece um framework para a compreensão de pontos, vetores e formas em um espaço multidimensional.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-question-circle"></i> O que é ℝⁿ?</h2>
+                <p>O espaço euclidiano ℝⁿ é o conjunto de todos os vetores com n componentes reais. Cada ponto em ℝⁿ é representado por um vetor:</p>
+                
+                <div class="math-container">
+                    \[
+                    \mathbf{x} = (x_1, x_2, \ldots, x_n)
+                    \]
+                </div>
+                
+                <div class="dimension-card">
+                    <h3>Exemplos de Dimensões:</h3>
+                    <ul>
+                        <li><strong>ℝ¹:</strong> Linha real (números reais)</li>
+                        <li><strong>ℝ²:</strong> Plano cartesiano (x,y)</li>
+                        <li><strong>ℝ³:</strong> Espaço tridimensional (x,y,z)</li>
+                        <li><strong>ℝⁿ (n>3):</strong> Espaços de dimensões superiores</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-cube"></i> Estrutura do Espaço Euclidiano</h2>
+                
+                <h3>1. Distância Euclidiana</h3>
+                <div class="math-container">
+                    \[
+                    d(\mathbf{a}, \mathbf{b}) = \sqrt{\sum_{i=1}^{n} (b_i - a_i)^2}
+                    \]
+                </div>
+                
+                <h3>2. Norma de Vetor</h3>
+                <div class="math-container">
+                    \[
+                    \|\mathbf{x}\| = \sqrt{\sum_{i=1}^{n} x_i^2}
+                    \]
+                </div>
+                
+                <h3>3. Produto Escalar</h3>
+                <div class="math-container">
+                    \[
+                    \langle \mathbf{u}, \mathbf{v} \rangle = \sum_{i=1}^{n} u_i v_i
+                    \]
+                </div>
+                
+                <h3>4. Subespaços</h3>
+                <p>Conjuntos de vetores que satisfazem condições específicas, como planos e linhas através da origem.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-rocket"></i> Aplicações do Espaço Euclidiano</h2>
+                
+                <div class="dimension-card">
+                    <h3>Geometria</h3>
+                    <p>Base para estudo de formas e figuras em múltiplas dimensões</p>
+                </div>
+                
+                <div class="dimension-card">
+                    <h3>Física</h3>
+                    <p>Descrição do movimento de partículas e sistemas físicos</p>
+                </div>
+                
+                <div class="dimension-card">
+                    <h3>Ciência de Dados</h3>
+                    <p>Representação de dados como vetores em algoritmos de ML</p>
+                </div>
+                
+                <div class="dimension-card">
+                    <h3>Economia</h3>
+                    <p>Modelagem de preferências e otimização multidimensional</p>
+                </div>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-check-circle"></i> Conclusão</h2>
+                <p>O espaço euclidiano ℝⁿ é fundamental para:</p>
+                <ul>
+                    <li>Modelagem matemática em múltiplas dimensões</li>
+                    <li>Análise geométrica e algébrica</li>
+                    <li>Aplicações interdisciplinares</li>
+                </ul>
+                <p>Sua compreensão é essencial para avançar em matemática e ciências aplicadas.</p>
+            </section>
+
+            <div class="nav-article">
+                <a href="artigo03.html" class="btn"><i class="fas fa-arrow-left"></i> Integral Definida</a>
+                <a href="../../index.html#videos" class="btn btn-primary">Vídeos Relacionados</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Trilha de Álgebra Linear</h3>
+                <ul>
+                    <li><a href="#">Espaços Vetoriais</a></li>
+                    <li><a href="#">Transformações Lineares</a></li>
+                    <li><a href="artigo04.html">Espaço Euclidiano (Atual)</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Aprenda. Pratique. Evolua. © 2025 - Compartilhando conhecimento em engenharia e matemática.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

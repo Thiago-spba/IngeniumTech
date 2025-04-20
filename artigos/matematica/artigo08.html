@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de Sistemas Lineares por Triangulação ou Escalonamento | IngeniumTech</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .math-container {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .nav-article {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-square-root-alt"></i> IngeniumTech</h1>
+            <nav>
+                <a href="../../index.html#home"><i class="fas fa-home"></i> Home</a>
+                <a href="../../index.html#artigos"><i class="fas fa-book"></i> Artigos</a>
+                <a href="../../index.html#videos"><i class="fas fa-video"></i> Vídeos</a>
+                <a href="../../index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="artigo-container">
+        <article>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > <a href="../../index.html#artigos">Artigos</a> > Matemática
+            </div>
+            
+            <h1>Classificação de Sistemas Lineares por Triangulação ou Escalonamento</h1>
+            <p class="meta"><i class="far fa-calendar-alt"></i> Publicado em: 08/07/2025 | <i class="fas fa-user-edit"></i> Autor: Equipe IngeniumTech</p>
+            
+            <section>
+                <p>Resolver sistemas lineares é uma tarefa fundamental na matemática e em diversas aplicações práticas. Um dos métodos mais eficazes para isso é a triangulação ou escalonamento, que transforma o sistema em uma forma que facilita a resolução.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-th"></i> O que é Triangulação ou Escalonamento?</h2>
+                <p>A triangulação, ou escalonamento, é um processo de manipulação de um sistema de equações lineares para transformá-lo em uma forma triangular superior. Isso significa que, após o processo, as equações do sistema têm a seguinte estrutura:</p>
+                <div class="math-container">
+                    \[
+                    \begin{align*}
+                    a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n &= b_1 \\
+                    a_{22}x_2 + \cdots + a_{2n}x_n &= b_2 \\
+                    \vdots \\
+                    a_{nn}x_n &= b_n
+                    \end{align*}
+                    \]
+                </div>
+                <p>Essa forma facilita a resolução do sistema através de substituição regressiva.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-cogs"></i> Processo de Escalonamento</h2>
+                <ol>
+                    <li><strong>Escolha do Pivô:</strong> Selecione um elemento não nulo na coluna atual para ser o pivô.</li>
+                    <li><strong>Eliminação:</strong> Utilize operações de linha para zerar todos os elementos abaixo do pivô na coluna atual.</li>
+                    <li><strong>Repetição:</strong> Repita o processo para as colunas subsequentes até que a matriz do sistema esteja em forma triangular superior.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-exchange-alt"></i> Classificação de Sistemas</h2>
+                <p>Após o escalonamento, os sistemas lineares podem ser classificados em três tipos:</p>
+                <ul>
+                    <li><strong>Sistema Consistente e Determinado:</strong> Possui uma solução única. O número de equações independentes é igual ao número de variáveis.</li>
+                    <li><strong>Sistema Consistente e Indeterminado:</strong> Possui infinitas soluções. O número de equações independentes é menor que o número de variáveis.</li>
+                    <li><strong>Sistema Inconsistente:</strong> Não possui solução. Ocorre quando uma linha do sistema resulta em uma contradição, como \( 0 = 1 \).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-check-circle"></i> Conclusão</h2>
+                <p>O método de triangulação ou escalonamento é uma técnica poderosa para resolver sistemas lineares e compreender suas soluções. A capacidade de classificar sistemas após o escalonamento permite uma análise mais profunda de suas propriedades e aplicações práticas em diversas áreas da ciência e engenharia.</p>
+            </section>
+
+            <div class="nav-article">
+                <a href="../../index.html" class="btn"><i class="fas fa-home"></i> Voltar à Home</a>
+                <a href="../../index.html#videos" class="btn btn-primary">Assistir Vídeos Relacionados</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="../../index.html#artigos">Todos os Artigos</a></li>
+                    <li><a href="../../index.html#videos">Vídeos Educativos</a></li>
+                    <li><a href="../../index.html#sobre">Sobre o Projeto</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Aprenda. Pratique. Evolua. © 2025 - Compartilhando conhecimento em engenharia e matemática.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

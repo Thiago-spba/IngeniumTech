@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Nabla e Divergente | IngeniumTech</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .math-container {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .nav-article {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-square-root-alt"></i> IngeniumTech</h1>
+            <nav>
+                <a href="../../index.html#home"><i class="fas fa-home"></i> Home</a>
+                <a href="../../index.html#artigos"><i class="fas fa-book"></i> Artigos</a>
+                <a href="../../index.html#videos"><i class="fas fa-video"></i> Vídeos</a>
+                <a href="../../index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="artigo-container">
+        <article>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > <a href="../../index.html#artigos">Artigos</a> > Matemática
+            </div>
+            
+            <h1>O Operador Nabla e a Divergente: Um Mergulho na Análise Vetorial</h1>
+            <p class="meta"><i class="far fa-calendar-alt"></i> Publicado em: 08/07/2025 | <i class="fas fa-user-edit"></i> Autor: Equipe IngeniumTech</p>
+            
+            <section>
+                <p>Na matemática e na física, o operador nabla é uma ferramenta poderosa que nos permite explorar e entender os campos vetoriais e escalares. Também conhecido como "del", o operador nabla é representado pelo símbolo ∇ e tem um papel fundamental em várias áreas, como a dinâmica de fluidos, a eletromagnetismo e a teoria do campo.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-question-circle"></i> O que é o Operador Nabla?</h2>
+                <p>O operador nabla é um operador vetorial que atua em funções escalares e vetoriais. Ele é composto por três derivadas parciais, correspondendo às três dimensões do espaço tridimensional:</p>
+                
+                <div class="math-container">
+                    \[
+                    \nabla = \left( \frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z} \right)
+                    \]
+                </div>
+                
+                <p>Sua principal função é calcular a taxa de variação de um campo em relação às suas coordenadas espaciais.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-cogs"></i> Aplicação do Nabla</h2>
+                
+                <h3>1. Gradiente (∇f)</h3>
+                <p>O gradiente de uma função escalar \( f \) é um vetor que aponta na direção da maior taxa de aumento da função:</p>
+                
+                <div class="math-container">
+                    \[
+                    \nabla f = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \right)
+                    \]
+                </div>
+                <p>Essencial em otimização e problemas de maximização/minimização.</p>
+                
+                <h3>2. Divergente (∇·F)</h3>
+                <p>Mede a taxa de expansão/contração de um campo vetorial:</p>
+                
+                <div class="math-container">
+                    \[
+                    \nabla \cdot \mathbf{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}
+                    \]
+                </div>
+                <p>Fundamental na física de fluidos para descrever fluxos.</p>
+                
+                <h3>3. Rotacional (∇×F)</h3>
+                <p>Mede a tendência de rotação em um campo vetorial:</p>
+                
+                <div class="math-container">
+                    \[
+                    \nabla \times \mathbf{F} = \left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z}, \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x}, \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right)
+                    \]
+                </div>
+                <p>Essencial no eletromagnetismo para descrever circulação de campos.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-lightbulb"></i> A Importância da Divergente</h2>
+                <p>A divergente fornece informações sobre fontes e sumidouros de campos. Em eletromagnetismo:</p>
+                <ul>
+                    <li>Divergente positivo → Fonte de carga</li>
+                    <li>Divergente negativo → Sumidouro de carga</li>
+                </ul>
+                <p>Relaciona-se diretamente com a <strong>Lei de Gauss</strong>, conectando matemática e física fundamental.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-check-circle"></i> Conclusão</h2>
+                <p>O operador nabla e a divergente são ferramentas essenciais que:</p>
+                <ol>
+                    <li>Descrevem variações espaciais de campos</li>
+                    <li>Conectam teoria matemática e fenômenos físicos</li>
+                    <li>Possibilitam avanços em diversas áreas científicas</li>
+                </ol>
+                <p>Seu domínio abre portas para compreensão avançada da natureza e desenvolvimento tecnológico.</p>
+            </section>
+
+            <div class="nav-article">
+                <a href="../../index.html" class="btn"><i class="fas fa-home"></i> Voltar à Home</a>
+                <a href="../../index.html#videos" class="btn btn-primary">Assistir Vídeos Relacionados</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="../../index.html#artigos">Todos os Artigos</a></li>
+                    <li><a href="../../index.html#videos">Vídeos Educativos</a></li>
+                    <li><a href="../../index.html#sobre">Sobre o Projeto</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Aprenda. Pratique. Evolua. © 2025 - Compartilhando conhecimento em engenharia e matemática.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

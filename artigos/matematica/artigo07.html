@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades dos Determinantes | IngeniumTech</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .math-container {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .nav-article {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-square-root-alt"></i> IngeniumTech</h1>
+            <nav>
+                <a href="../../index.html#home"><i class="fas fa-home"></i> Home</a>
+                <a href="../../index.html#artigos"><i class="fas fa-book"></i> Artigos</a>
+                <a href="../../index.html#videos"><i class="fas fa-video"></i> Vídeos</a>
+                <a href="../../index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="artigo-container">
+        <article>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > <a href="../../index.html#artigos">Artigos</a> > Matemática
+            </div>
+            
+            <h1>Propriedades dos Determinantes</h1>
+            <p class="meta"><i class="far fa-calendar-alt"></i> Publicado em: 08/07/2025 | <i class="fas fa-user-edit"></i> Autor: Equipe IngeniumTech</p>
+            
+            <section>
+                <p>Os determinantes são valores escalar associados a matrizes quadradas e têm um papel crucial em diversas áreas da matemática, especialmente na álgebra linear. Eles são usados para determinar a invertibilidade de matrizes, calcular volumes e resolver sistemas de equações lineares.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-th"></i> Propriedades Fundamentais dos Determinantes</h2>
+                <p>Várias propriedades fazem dos determinantes uma ferramenta poderosa. Aqui estão algumas das propriedades mais importantes:</p>
+                <ul>
+                    <li><strong>Determinante da Matriz Identidade:</strong> O determinante de uma matriz identidade de qualquer ordem é 1.</li>
+                    <li><strong>Troca de Linhas:</strong> Trocar duas linhas de uma matriz altera o sinal do determinante.</li>
+                    <li><strong>Multiplicação por Escalar:</strong> Multiplicar uma linha de uma matriz por um escalar \( k \) multiplica o determinante por \( k \).</li>
+                    <li><strong>Matriz Triangular:</strong> O determinante de uma matriz triangular (superior ou inferior) é o produto dos elementos da diagonal principal.</li>
+                    <li><strong>Linhas ou Colunas Iguais/Proporcionais:</strong> Se duas linhas ou colunas de uma matriz são iguais ou proporcionais, o determinante é zero.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-exchange-alt"></i> Propriedades Avançadas dos Determinantes</h2>
+                <ul>
+                    <li><strong>Determinante de um Produto:</strong> O determinante do produto de duas matrizes é igual ao produto dos determinantes das matrizes individuais:
+                        <div class="math-container">
+                            \[
+                            \det(AB) = \det(A) \cdot \det(B)
+                            \]
+                        </div>
+                    </li>
+                    <li><strong>Determinante da Transposta:</strong> O determinante de uma matriz é igual ao determinante de sua transposta:
+                        <div class="math-container">
+                            \[
+                            \det(A) = \det(A^T)
+                            \]
+                        </div>
+                    </li>
+                    <li><strong>Determinante e Inversão:</strong> Uma matriz é invertível se, e somente se, seu determinante for diferente de zero. O determinante da inversa é o inverso do determinante:
+                        <div class="math-container">
+                            \[
+                            \det(A^{-1}) = \frac{1}{\det(A)}
+                            \]
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-check-circle"></i> Conclusão</h2>
+                <p>Os determinantes possuem propriedades fundamentais que os tornam indispensáveis na álgebra linear e em muitas aplicações práticas. Compreender suas propriedades não só facilita a manipulação de matrizes, mas também abre portas para a resolução de problemas complexos em matemática aplicada, física e engenharia.</p>
+            </section>
+
+            <div class="nav-article">
+                <a href="../../index.html" class="btn"><i class="fas fa-home"></i> Voltar à Home</a>
+                <a href="../../index.html#videos" class="btn btn-primary">Assistir Vídeos Relacionados</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="../../index.html#artigos">Todos os Artigos</a></li>
+                    <li><a href="../../index.html#videos">Vídeos Educativos</a></li>
+                    <li><a href="../../index.html#sobre">Sobre o Projeto</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Aprenda. Pratique. Evolua. © 2025 - Compartilhando conhecimento em engenharia e matemática.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derivadas Parciais | IngeniumTech</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .math-container {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .nav-article {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-square-root-alt"></i> IngeniumTech</h1>
+            <nav>
+                <a href="../../index.html#home"><i class="fas fa-home"></i> Home</a>
+                <a href="../../index.html#artigos"><i class="fas fa-book"></i> Artigos</a>
+                <a href="../../index.html#videos"><i class="fas fa-video"></i> Vídeos</a>
+                <a href="../../index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="artigo-container">
+        <article>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > <a href="../../index.html#artigos">Artigos</a> > Matemática
+            </div>
+            
+            <h1>Derivadas Parciais: Conceito e Aplicações</h1>
+            <p class="meta"><i class="far fa-calendar-alt"></i> Publicado em: 08/07/2025 | <i class="fas fa-user-edit"></i> Autor: Equipe IngeniumTech</p>
+            
+            <section>
+                <p>As derivadas parciais são uma ferramenta essencial no cálculo, permitindo o estudo de como uma função de várias variáveis muda em relação a uma de suas variáveis, mantendo as outras constantes. Este conceito é crucial em matemática, física, economia e engenharia.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-question-circle"></i> O que são Derivadas Parciais?</h2>
+                <p>Consideremos uma função \( f(x, y) \) que depende de duas variáveis \( x \) e \( y \). A derivada parcial de \( f \) em relação a \( x \), denotada por \( \frac{\partial f}{\partial x} \), mede a taxa de variação da função \( f \) à medida que \( x \) muda, mantendo \( y \) constante.</p>
+                <div class="math-container">
+                    \[
+                    \frac{\partial f}{\partial x} = \lim_{\Delta x \to 0} \frac{f(x + \Delta x, y) - f(x, y)}{\Delta x}
+                    \]
+                </div>
+                <p>De forma semelhante, a derivada parcial em relação a \( y \) é denotada por \( \frac{\partial f}{\partial y} \) e mede a taxa de variação de \( f \) em relação a \( y \), mantendo \( x \) constante.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-cogs"></i> Cálculo de Derivadas Parciais</h2>
+                <p>Para calcular as derivadas parciais, focamos em uma variável de cada vez. Vamos considerar o exemplo prático:</p>
+                <p>Seja \( f(x, y) = x^2y + 3xy^2 \).</p>
+                <h3>1. Derivada Parcial em Relação a \( x \)</h3>
+                <div class="math-container">
+                    \[
+                    \frac{\partial f}{\partial x} = 2xy + 3y^2
+                    \]
+                </div>
+                <h3>2. Derivada Parcial em Relação a \( y \)</h3>
+                <div class="math-container">
+                    \[
+                    \frac{\partial f}{\partial y} = x^2 + 6xy
+                    \]
+                </div>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-lightbulb"></i> Propriedades das Derivadas Parciais</h2>
+                <ul>
+                    <li><strong>Linearidade:</strong> Para funções \( f \) e \( g \) e constantes \( a \) e \( b \):
+                        <div class="math-container">
+                            \[
+                            \frac{\partial}{\partial x}(af + bg) = a\frac{\partial f}{\partial x} + b\frac{\partial g}{\partial x}
+                            \]
+                        </div>
+                    </li>
+                    <li><strong>Regra do Produto:</strong> Para funções \( f \) e \( g \):
+                        <div class="math-container">
+                            \[
+                            \frac{\partial}{\partial x}(fg) = f \frac{\partial g}{\partial x} + g \frac{\partial f}{\partial x}
+                            \]
+                        </div>
+                    </li>
+                    <li><strong>Regra da Cadeia:</strong> Para \( z = f(x, y) \) e \( x \), \( y \) funções de \( t \):
+                        <div class="math-container">
+                            \[
+                            \frac{dz}{dt} = \frac{\partial z}{\partial x} \frac{dx}{dt} + \frac{\partial z}{\partial y} \frac{dy}{dt}
+                            \]
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-check-circle"></i> Aplicações das Derivadas Parciais</h2>
+                <p>As derivadas parciais têm uma vasta gama de aplicações:</p>
+                <ul>
+                    <li><strong>Otimização:</strong> Encontrar máximos e mínimos de funções multivariáveis.</li>
+                    <li><strong>Física:</strong> Descrição de fenômenos como dinâmica dos fluidos e termodinâmica.</li>
+                    <li><strong>Economia:</strong> Análise de como fatores afetam funções de utilidade ou produção.</li>
+                    <li><strong>Engenharia:</strong> Modelagem de sistemas complexos e análise de sensibilidade.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-conclusion"></i> Conclusão</h2>
+                <p>As derivadas parciais são uma ferramenta poderosa para analisar funções de várias variáveis, revelando como essas funções mudam em resposta a variações em uma variável. Sua compreensão e aplicação são cruciais em muitas disciplinas, desde a matemática pura até a engenharia. Elas fornecem insights valiosos em problemas complexos, tornando-se indispensáveis na análise quantitativa de fenômenos do mundo real.</p>
+            </section>
+
+            <div class="nav-article">
+                <a href="../../index.html" class="btn"><i class="fas fa-home"></i> Voltar à Home</a>
+                <a href="../../index.html#videos" class="btn btn-primary">Assistir Vídeos Relacionados</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="../../index.html#artigos">Todos os Artigos</a></li>
+                    <li><a href="../../index.html#videos">Vídeos Educativos</a></li>
+                    <li><a href="../../index.html#sobre">Sobre o Projeto</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Aprenda. Pratique. Evolua. © 2025 - Compartilhando conhecimento em engenharia e matemática.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
