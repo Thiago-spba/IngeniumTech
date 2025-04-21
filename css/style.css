@@ -383,20 +383,6 @@ footer {
     background: rgba(207, 194, 194, 0.1);
 }
 
-.engineering-counter i {
-    color: #d181bd;
-    font-size: 1.2em;
-}
-
-.engineering-counter img {
-    height: 16px;
-    filter: opacity(0.7);
-}
-
-.engineering-counter span {
-    font-style: italic;
-    font-size: 0.85em;
-}
 .engineering-counter {
     display: flex;
     align-items: center;
@@ -404,5 +390,6 @@ footer {
 }
 
 .engineering-counter img {
+    height: 20px; /* Ajuste conforme necessário */
     vertical-align: middle;
 }
