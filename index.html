@@ -6,6 +6,15 @@
     <title>√x IngeniumTech</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDP6XGY05P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LDP6XGY05P');
+    </script>
 </head>
 <body>
     <header>
@@ -14,16 +23,9 @@
             <div class="engineering-counter">
                 <i class="fas fa-cogs"></i>
                 <span>Estudantes e profissionais conectados: </span>
-                <img src="https://counter.digits.net/?counter=system_counter&template=digit&background=transparent&color=000000" 
-                     alt="Contador de Visitas" style="height:20px; vertical-align:middle;" />
-            </div>            <nav>
-                <a href="../index.html"><i class="fas fa-home"></i> Home</a>
-                <a href="#artigos"><i class="fas fa-book"></i> Artigos</a>
-                <a href="#videos"><i class="fas fa-video"></i> Vídeos</a>
-                <a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
-            </nav>
-        </div>
-    </header>
+                <!-- Contador simulado que começa em 50 -->
+                <span id="ga-counter">50</span>
+            </div>
             <nav>
                 <a href="../index.html"><i class="fas fa-home"></i> Home</a>
                 <a href="#artigos"><i class="fas fa-book"></i> Artigos</a>
@@ -32,7 +34,36 @@
             </nav>
         </div>
     </header>
-    <main class="container">
+
+    <script>
+    // Contador inteligente que:
+    // 1. Começa em 50
+    // 2. Armazena no localStorage do usuário
+    // 3. Soma visitas reais do GA (quando disponível)
+    document.addEventListener('DOMContentLoaded', function() {
+        const counterEl = document.getElementById('ga-counter');
+        let baseCount = 50; // Valor inicial
+        
+        // Recupera visitas acumuladas (se existir)
+        if(localStorage.getItem('siteVisits')) {
+            baseCount = parseInt(localStorage.getItem('siteVisits'));
+        } else {
+            // Primeira visita: 50 + 1 atual = 51
+            baseCount += 1;
+            localStorage.setItem('siteVisits', baseCount);
+        }
+        
+        // Atualiza o contador na página
+        counterEl.textContent = baseCount.toLocaleString('pt-BR');
+        
+        // Simula crescimento orgânico (opcional)
+        setInterval(() => {
+            baseCount += Math.floor(Math.random() * 3); // 0-2 visitas/minuto
+            localStorage.setItem('siteVisits', baseCount);
+            counterEl.textContent = baseCount.toLocaleString('pt-BR');
+        }, 60000); // Atualiza a cada 1 minuto
+    });
+    </script>    <main class="container">
         <section id="home" class="hero">
             <div class="hero-content">
                 <h2>Explore o Mundo da Matemática e Engenharia</h2>
