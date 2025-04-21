@@ -369,7 +369,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #ec540d; /* Cor ao passar o mouse */
+    color: #dd6b36; /* Cor ao passar o mouse */
 }
 .engineering-counter {
     display: flex;
@@ -396,4 +396,13 @@ footer {
 .engineering-counter span {
     font-style: italic;
     font-size: 0.85em;
+}
+.engineering-counter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.engineering-counter img {
+    vertical-align: middle;
 }
