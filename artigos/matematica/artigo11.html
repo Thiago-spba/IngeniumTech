@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Densidade e Peso Específico | IngeniumTech</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .math-container {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow-x: auto;
+            text-align: center;
+        }
+        .nav-article {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        p, li {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-square-root-alt"></i> IngeniumTech</h1>
+            <nav>
+                <a href="../../index.html#home"><i class="fas fa-home"></i> Home</a>
+                <a href="../../index.html#artigos"><i class="fas fa-book"></i> Artigos</a>
+                <a href="../../index.html#videos"><i class="fas fa-video"></i> Vídeos</a>
+                <a href="../../index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="artigo-container">
+        <article>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > <a href="../../index.html#artigos">Artigos</a> > Matemática
+            </div>
+            
+            <h1>Vetores no Plano Euclidiano</h1>
+            <p class="meta"><i class="far fa-calendar-alt"></i> Publicado em Maio de 2025 | <i class="fas fa-user-edit"></i> Autor: Equipe IngeniumTech</p>
+            
+            <section>
+                <h2>1. O que é o Plano Euclidiano?</h2>
+                <p>O <strong>plano euclidiano</strong> é a base da geometria que usamos no dia a dia, composto pelos eixos <strong>x</strong> e <strong>y</strong>. Cada ponto pode ser representado por coordenadas (x, y), como A = (3, 2). Esse conceito é fundamental em muitas áreas, desde a arquitetura até a criação de gráficos computacionais.</p>
+            </section>
+
+            <section>
+                <h2>2. O que é um Vetor no Plano Euclidiano?</h2>
+                <p>Um <strong>vetor</strong> é uma entidade que possui <strong>módulo</strong>, <strong>direção</strong> e <strong>sentido</strong>. Ele representa um deslocamento no espaço, independentemente de onde começa. Por exemplo, o vetor de A = (1, 2) a B = (4, 6) é dado por <strong>v = B - A = (3, 4)</strong>, indicando movimento na horizontal e na vertical.</p>
+            </section>
+
+            <section>
+                <h2>3. Componentes de um Vetor</h2>
+                <p>Um vetor <strong>v = (a, b)</strong> indica:</p>
+                <ul>
+                    <li>Movimento de <strong>a</strong> unidades no eixo x</li>
+                    <li>Movimento de <strong>b</strong> unidades no eixo y</li>
+                </ul>
+                <p>Essa representação facilita cálculos em física e engenharia, possibilitando o estudo de forças e movimentos.</p>
+            </section>
+
+            <section>
+                <h2>4. Módulo de um Vetor</h2>
+                <p>O módulo ou "tamanho" do vetor é calculado por:</p>
+                <p><strong>|v| = √(a² + b²)</strong></p>
+                <p>Por exemplo, para v = (3, 4), temos <strong>|v| = 5</strong>. Este cálculo é essencial para determinar a intensidade de forças em sistemas físicos.</p>
+            </section>
+
+            <section>
+                <h2>5. Vetores Colineares e Ortogonais</h2>
+                <p><strong>Colineares</strong> têm a mesma direção, como múltiplos de um vetor. Já <strong>ortogonais</strong> são perpendiculares, com produto escalar zero, importante para calcular ângulos entre forças.</p>
+            </section>
+
+            <section>
+                <h2>6. Operações com Vetores</h2>
+                <ul>
+                    <li><strong>Soma</strong>: v + u = (a + c, b + d)</li>
+                    <li><strong>Multiplicação por escalar</strong>: k·v = (k·a, k·b)</li>
+                </ul>
+                <p>Essas operações são fundamentais na análise de movimentos e na resolução de problemas de física.</p>
+            </section>
+
+            <section>
+                <h2>7. Produto Escalar</h2>
+                <p>O produto escalar mede o alinhamento entre dois vetores:</p>
+                <p><strong>v · u = a·c + b·d</strong></p>
+                <p>É usado para calcular ângulos e verificar ortogonalidade, essencial em cálculos de trabalho e energia.</p>
+            </section>
+
+            <section>
+                <h2>8. Vetor Unitário</h2>
+                <p>Vetores unitários têm módulo 1, indicando somente direção. São usados para definir direções padrão em sistemas de coordenadas.</p>
+            </section>
+
+            <section>
+                <h2>9. Aplicações Práticas dos Vetores</h2>
+                <p>Vetores são utilizados na engenharia para representar forças, deslocamentos, velocidades e mais. Em física, são fundamentais para descrever movimentos e interações. Na computação gráfica, definem transformações e animações de objetos.</p>
+            </section>
+
+            <section>
+                <h2>Curiosidade Histórica</h2>
+                <p>Vetores evoluíram com contribuições de matemáticos como <strong>William Rowan Hamilton</strong>, que introduziu os quaternions, expandindo a ideia de vetores para o espaço tridimensional. Essa inovação abriu caminho para avanços em física quântica e computação gráfica.</p>
+            </section>
+
+            <div class="nav-article">
+                <a href="../../index.html" class="btn"><i class="fas fa-home"></i> Voltar à Home</a>
+                <a href="../../index.html#videos" class="btn btn-primary">Assistir Vídeos Relacionados</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="../../index.html#artigos">Todos os Artigos</a></li>
+                    <li><a href="../../index.html#videos">Vídeos Educativos</a></li>
+                    <li><a href="../../index.html#sobre">Sobre o Projeto</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Aprenda. Pratique. Evolua. © 2025 - Compartilhando conhecimento em engenharia e matemática.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
