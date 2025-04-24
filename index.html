@@ -27,7 +27,7 @@
                 <span id="ga-counter">50</span>
             </div>
             <nav>
-                <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
                 <a href="#artigos"><i class="fas fa-book"></i> Artigos</a>
                 <a href="#videos"><i class="fas fa-video"></i> Vídeos</a>
                 <a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
@@ -260,6 +260,51 @@
                         <p>Conceitos de gradiente, divergente e rotacional</p>
                     </div>
                 </div>
+  
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/S9zlJFg7pZY" 
+                            title="Vetores no Plano e no Espaço" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Vetores no Plano e no Espaço</h3>
+                        <p>Conceitos de vetores em duas e três dimensões</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/BkzckUG7AAM" 
+                            title="Produto Misto - Cálculo Vetorial" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Produto Misto - Cálculo Vetorial</h3>
+                        <p>Entenda o cálculo do produto misto em vetores</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/Qz5tyioDh20" 
+                            title="Vetores no Espaço R³: Operações Elementares, Produtos Escalar, Vetorial e Misto" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Vetores no Espaço R³: Operações Elementares, Produtos Escalar, Vetorial e Misto</h3>
+                        <p>Explore as operações fundamentais em vetores no espaço tridimensional</p>
+                    </div>
+                </div>
                 
                 <div class="video-card">
                     <div class="video-container">
@@ -329,5 +374,32 @@
             <p>Aprenda. Pratique. Evolua. © 2025 - Compartilhando conhecimento em engenharia e matemática.</p>
         </div>
     </footer>
+
+    <!-- Script para garantir que os links de ancoragem funcionem suavemente -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Seleciona todos os links que começam com #
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            // Adiciona event listener para cada link
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Obtém o ID da seção-alvo do href
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        // Rola até o elemento de destino com comportamento suave
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

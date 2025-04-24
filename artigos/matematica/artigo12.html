@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto Misto | IngeniumTech</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .math-container {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow-x: auto;
+            text-align: center;
+        }
+        .nav-article {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        p, li {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-square-root-alt"></i> IngeniumTech</h1>
+            <nav>
+                <a href="../../index.html#home"><i class="fas fa-home"></i> Home</a>
+                <a href="../../index.html#artigos"><i class="fas fa-book"></i> Artigos</a>
+                <a href="../../index.html#videos"><i class="fas fa-video"></i> Vídeos</a>
+                <a href="../../index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="artigo-container">
+        <article>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > <a href="../../index.html#artigos">Artigos</a> > Matemática
+            </div>
+            
+            <h1>Produto Misto</h1>
+            <p class="meta"><i class="far fa-calendar-alt"></i> Publicado em Maio de 2025 | <i class="fas fa-user-edit"></i> Autor: Equipe IngeniumTech</p>
+            
+            <section>
+                <h2>1. O que é o Produto Misto?</h2>
+                <p>O <strong>produto misto</strong> envolve três vetores no espaço tridimensional (\( \mathbb{R}^3 \)) e é uma combinação de dois produtos:</p>
+                <ul>
+                    <li><strong>Produto vetorial</strong> entre dois vetores: resulta em um novo vetor perpendicular aos dois.</li>
+                    <li><strong>Produto escalar</strong> desse novo vetor com o terceiro vetor.</li>
+                </ul>
+                <p>A notação é: <strong>[a, b, c] = (a × b) · c</strong></p>
+            </section>
+
+            <section>
+                <h2>2. Interpretação Geométrica</h2>
+                <p>O valor do produto misto representa o volume do paralelepípedo formado pelos vetores a, b e c.</p>
+                <ul>
+                    <li><strong>Zero</strong>: os vetores estão no mesmo plano (são coplanares).</li>
+                    <li><strong>Diferente de zero</strong>: formam um volume real.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Fórmula com Determinante</h2>
+                <p>Uma forma prática de calcular o produto misto é usando determinantes.</p>
+                <p>Se os vetores forem:</p>
+                <ul>
+                    <li>a = (a₁, a₂, a₃)</li>
+                    <li>b = (b₁, b₂, b₃)</li>
+                    <li>c = (c₁, c₂, c₃)</li>
+                </ul>
+                <p>Então, o produto misto é:</p>
+                <div class="math-container">
+                    \[
+                    [a, b, c] = \begin{vmatrix}
+                    a_1 & a_2 & a_3 \\
+                    b_1 & b_2 & b_3 \\
+                    c_1 & c_2 & c_3 \\
+                    \end{vmatrix}
+                    \]
+                </div>
+                <p>Esse valor é um número escalar e pode ser positivo, negativo ou zero.</p>
+            </section>
+
+            <section>
+                <h2>4. Exemplo Resolvido</h2>
+                <p>Seja:</p>
+                <ul>
+                    <li>a = (1, 0, 0)</li>
+                    <li>b = (0, 1, 0)</li>
+                    <li>c = (0, 0, 1)</li>
+                </ul>
+                <p>Vamos calcular:</p>
+                <div class="math-container">
+                    \[
+                    \begin{vmatrix}
+                    1 & 0 & 0 \\
+                    0 & 1 & 0 \\
+                    0 & 0 & 1 \\
+                    \end{vmatrix} = 1 \quad (\text{é o volume do cubo unitário})
+                    \]
+                </div>
+                <p>Logo, <strong>[a, b, c] = 1</strong></p>
+            </section>
+
+            <section>
+                <h2>5. Aplicações</h2>
+                <p>Em engenharia, o produto misto é utilizado para calcular volumes de estruturas ou áreas delimitadas por vetores. Na física, é aplicado para representar grandezas relacionadas ao torque, momento angular e densidade de fluxo tridimensional.</p>
+            </section>
+
+            <section>
+                <h2>6. Curiosidades</h2>
+                <p>O valor do produto misto pode ser negativo, indicando a orientação dos vetores — se estão orientados positivamente ou negativamente em relação ao sistema de coordenadas. O módulo (valor absoluto) do produto misto dá o volume do paralelepípedo formado por a, b e c.</p>
+                <section>
+                    <h2>Mais interessante</h2>
+                    <p>O valor do produto misto pode ser negativo, indicando a orientação dos vetores — se estão orientados positivamente ou negativamente em relação ao sistema de coordenadas.</p>
+                    <p>O módulo (valor absoluto) do produto misto dá o volume do paralelepípedo formado por a, b e c.</p>
+                    <p><strong>Sentido e Direção:</strong> Quando falamos em vetores, direção é a linha ao longo da qual o vetor atua, enquanto sentido é para onde o vetor aponta nessa linha. Imagine uma estrada: a direção é a estrada em si, e o sentido é para qual lado você está indo — para frente ou para trás. No contexto do produto misto, a orientação dos vetores pode mudar o sinal do resultado (positivo ou negativo), mas o volume é sempre positivo.</p>
+                </section>
+            </section>
+
+            <div class="nav-article">
+                <a href="../../index.html" class="btn"><i class="fas fa-home"></i> Voltar à Home</a>
+                <a href="../../index.html#videos" class="btn btn-primary">Assistir Vídeos Relacionados</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="../../index.html#artigos">Todos os Artigos</a></li>
+                    <li><a href="../../index.html#videos">Vídeos Educativos</a></li>
+                    <li><a href="../../index.html#sobre">Sobre o Projeto</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Aprenda. Pratique. Evolua. © 2025 - Compartilhando conhecimento em engenharia e matemática.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
