@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>√x IngeniumTech</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Google tag (gtag.js) -->
+
+    <meta name="description" content="IngeniumTech: Artigos, vídeos e recursos educativos sobre matemática aplicada e engenharia para estudantes e profissionais.">
+    <meta property="og:title" content="IngeniumTech - Matemática e Engenharia">
+    <meta property="og:description" content="Recursos educativos sobre matemática aplicada e engenharia.">
+    <meta property="og:url" content="https://ingeniumtech.vercel.app/"> <meta property="og:type" content="website">
+    <link rel="stylesheet" href="/css/style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDP6XGY05P"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -19,51 +22,22 @@
 <body>
     <header>
         <div class="header-container">
-            <h1><i class="fas fa-square-root-alt"></i> IngeniumTech</h1>
+            <h1><i class="fas fa-square-root-alt" aria-hidden="true"></i> IngeniumTech</h1>
             <div class="engineering-counter">
-                <i class="fas fa-cogs"></i>
+                <i class="fas fa-cogs" aria-hidden="true"></i>
                 <span>Estudantes e profissionais conectados: </span>
-                <!-- Contador simulado que começa em 50 -->
                 <span id="ga-counter">50</span>
             </div>
             <nav>
-                <a href="index.html"><i class="fas fa-home"></i> Home</a>
-                <a href="#artigos"><i class="fas fa-book"></i> Artigos</a>
-                <a href="#videos"><i class="fas fa-video"></i> Vídeos</a>
-                <a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+                <a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+                <a href="#artigos"><i class="fas fa-book" aria-hidden="true"></i> Artigos</a>
+                <a href="#videos"><i class="fas fa-video" aria-hidden="true"></i> Vídeos</a>
+                <a href="#sobre"><i class="fas fa-info-circle" aria-hidden="true"></i> Sobre</a>
             </nav>
         </div>
     </header>
 
-    <script>
-    // Contador inteligente que:
-    // 1. Começa em 50
-    // 2. Armazena no localStorage do usuário
-    // 3. Soma visitas reais do GA (quando disponível)
-    document.addEventListener('DOMContentLoaded', function() {
-        const counterEl = document.getElementById('ga-counter');
-        let baseCount = 50; // Valor inicial
-        
-        // Recupera visitas acumuladas (se existir)
-        if(localStorage.getItem('siteVisits')) {
-            baseCount = parseInt(localStorage.getItem('siteVisits'));
-        } else {
-            // Primeira visita: 50 + 1 atual = 51
-            baseCount += 1;
-            localStorage.setItem('siteVisits', baseCount);
-        }
-        
-        // Atualiza o contador na página
-        counterEl.textContent = baseCount.toLocaleString('pt-BR');
-        
-        // Simula crescimento orgânico (opcional)
-        setInterval(() => {
-            baseCount += Math.floor(Math.random() * 3); // 0-2 visitas/minuto
-            localStorage.setItem('siteVisits', baseCount);
-            counterEl.textContent = baseCount.toLocaleString('pt-BR');
-        }, 60000); // Atualiza a cada 1 minuto
-    });
-    </script>    <main class="container">
+    <main class="container">
         <section id="home" class="hero">
             <div class="hero-content">
                 <h2>Explore o Mundo da Matemática e Engenharia</h2>
@@ -76,92 +50,68 @@
         </section>
 
         <section id="artigos" class="section">
-            <h2><i class="fas fa-book-open"></i> Artigos Recentes</h2>
+            <h2><i class="fas fa-book-open" aria-hidden="true"></i> Artigos Recentes</h2>
             <div class="articles-grid">
-                <!-- Artigo 1 - Operador Nabla -->
                 <article class="card">
                     <div class="card-header math-bg">
                         <h3>O Operador Nabla e a Divergente</h3>
                     </div>
                     <div class="card-body">
                         <p>Na matemática e na física, o operador nabla é uma ferramenta poderosa que nos permite explorar e entender os campos vetoriais e escalares. Também conhecido como "del".</p>
-                        <a href="artigos/matematica/artigo01.html" class="btn btn-outline">Ler Artigo</a>
-                    </div>
+                        <a href="artigos/matematica/artigo01.html" class="btn btn-outline">Ler Artigo</a> </div>
                 </article>
-        
-                <!-- Artigo 2 - Perda de Carga -->
                 <article class="card">
                     <div class="card-header eng-bg">
                         <h3>Perda de Carga Pontual e Distribuída</h3>
                     </div>
                     <div class="card-body">
                         <p>A análise da perda de carga é essencial para projetar sistemas de transporte de fluidos eficientes.</p>
-                        <a href="artigos/matematica/artigo02.html" class="btn btn-outline">Ler Artigo</a>
-                    </div>
+                        <a href="artigos/matematica/artigo02.html" class="btn btn-outline">Ler Artigo</a> </div>
                 </article>
-        
-                <!-- Artigo 04 - Espaço Euclidiano -->
                 <article class="card">
                     <div class="card-header math-bg">
                         <h3>O espaço euclidiano ℝⁿ</h3>
                     </div>
                     <div class="card-body">
                         <p>O espaço euclidiano ℝⁿ é um conceito fundamental na matemática, especialmente na geometria e na análise. Ele fornece uma base para a compreensão de pontos, vetores e formas em um espaço multidimensional.</p>
-                        <a href="artigos/matematica/artigo04.html" class="btn btn-outline">Ler Artigo</a>
-                    </div>
+                        <a href="artigos/matematica/artigo04.html" class="btn btn-outline">Ler Artigo</a> </div>
                 </article>
-        
-                <!-- Artigo 03 - Integral Definida -->
                 <article class="card">
                     <div class="card-header eng-bg">
                         <h3>Aplicações da Integral Definida</h3>
                     </div>
                     <div class="card-body">
                         <p>É um conceito fundamental no cálculo que mede a área sob uma curva em um intervalo específico. No entanto, suas aplicações vão muito além da simples área.</p>
-                        <a href="artigos/matematica/artigo03.html" class="btn btn-outline">Ler Artigo</a>
-                    </div>
+                        <a href="artigos/matematica/artigo03.html" class="btn btn-outline">Ler Artigo</a> </div>
                 </article>
-                <!-- Artigo 6 - Conceitos Básicos em Álgebra Linear -->
                 <article class="card">
                     <div class="card-header math-bg">
                         <h3>Conceitos Básicos em Álgebra Linear</h3>
                     </div>
                     <div class="card-body">
-                        <p>A álgebra linear é uma área da matemática que lida com vetores, espaços vetoriais, transformações lineares e sistemas de equações lineares.
-                             É um campo essencial para várias disciplinas.</p>
-                        <a href="artigos/matematica/artigo06.html" class="btn btn-outline">Ler Artigo</a>
-                    </div>
+                        <p>A álgebra linear é uma área da matemática que lida com vetores, espaços vetoriais, transformações lineares e sistemas de equações lineares. É um campo essencial para várias disciplinas.</p>
+                        <a href="artigos/matematica/artigo06.html" class="btn btn-outline">Ler Artigo</a> </div>
                 </article>
-                <!-- Artigo 10 - Densidade e Peso Específico -->
                 <article class="card">
                     <div class="card-header eng-bg">
                         <h3>Densidade e Peso Específico</h3>
                     </div>
                     <div class="card-body">
                         <p>Eles são essenciais para entender como os materiais se comportam em diferentes ambientes e condições.</p>
-                        <a href="artigos/matematica/artigo10.html" class="btn btn-outline">Ler Artigo</a>
-                    </div>
+                        <a href="artigos/matematica/artigo10.html" class="btn btn-outline">Ler Artigo</a> </div>
                 </article>
             </div>
-            
+
             <div class="section-footer">
-                <a href="todosartigos.html" class="btn btn-primary">Todos os Artigos</a>
-            </div>
+                <a href="todosartigos.html" class="btn btn-primary">Todos os Artigos</a> </div>
         </section>
 
         <section id="videos" class="section dark-bg">
-            <h2><i class="fas fa-video"></i> Vídeos em Destaque</h2>
+            <h2><i class="fas fa-video" aria-hidden="true"></i> Vídeos em Destaque</h2>
             <div class="videos-grid">
                 <div class="video-card">
                     <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/JPI0v74lYNU" 
-                            title="Cálculo de área com integrais" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JPI0v74lYNU?si=X3JBvVxcQ0KjCliV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                     <div class="video-info">
                         <h3>Cálculo de área com integrais</h3>
                         <p>Como calcular a Área limitada por 2 funções. 3 exercícios resolvidos de forma detalhada.</p>
@@ -169,14 +119,7 @@
                 </div>
                 <div class="video-card">
                     <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/wNgCuLqGPyo" 
-                            title="Balanço de massa: cálculos com volume de controle" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wNgCuLqGPyo?si=StLyLt9t5_IGf-zi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                     <div class="video-info">
                         <h3>Balanço de massa</h3>
                         <p>Cálculos com volume de controle arbitrário</p>
@@ -184,14 +127,7 @@
                 </div>
                 <div class="video-card">
                     <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/DN0GFDFHPuk" 
-                            title="Força de fluidos em barragens" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DN0GFDFHPuk?si=a2LKCI5tAx2_GoE1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                     <div class="video-info">
                         <h3>Força de Fluidos em Barragens</h3>
                         <p>Resolução detalhada de exercício sobre forças hidrostáticas</p>
@@ -204,7 +140,7 @@
         </section>
 
         <section id="sobre" class="section">
-            <h2><i class="fas fa-university"></i> Sobre o IngeniumTech</h2>
+            <h2><i class="fas fa-university" aria-hidden="true"></i> Sobre o IngeniumTech</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>🌟✨ <strong>Despertando a Curiosidade em Matemática e Engenharia</strong> ✨🌟</p>
@@ -213,138 +149,115 @@
                     <p>Disponibilizamos recursos educacionais que tornam a matemática não apenas acessível, mas também envolvente, capacitando estudantes e entusiastas a explorar conceitos fundamentais com confiança e competência.</p>
                     <p>Utilizamos estratégias de divulgação por meio de links distribuídos via WhatsApp e outras plataformas sociais, assegurando que a comunidade acadêmica esteja sempre conectada e atualizada com o que há de mais relevante no campo da Engenharia. 📱💬</p>
                     <p>Convidamos você a se unir a nós nesta jornada educativa, onde a matemática revela-se não apenas como uma disciplina de estudo, mas como uma aventura intelectual fascinante e enriquecedora. 🌍💡</p>
-                    <div class="features-list-horizontal">
-                        <span><i class="fas fa-atom"></i> Ciência</span>
-                        <span><i class="fas fa-calculator"></i> Matemática</span>
-                        <span><i class="fas fa-cogs"></i> Engenharia</span>
-                        <span><i class="fas fa-lightbulb"></i> Inovação</span>
-                        <span><i class="fas fa-book-reader"></i> Aprendizado</span>
-                        <span><i class="fas fa-graduation-cap"></i> Educação</span>
-                        <span><i class="fas fa-brain"></i> Conhecimento</span>
-                        <span><i class="fas fa-chalkboard-teacher"></i> Ensino</span>
-                        <span><i class="fas fa-globe"></i> Conectividade</span>
-                    </div>
+                    <ul class="features-list-horizontal">
+                        <li><i class="fas fa-atom" aria-hidden="true"></i> Ciência</li>
+                        <li><i class="fas fa-calculator" aria-hidden="true"></i> Matemática</li>
+                        <li><i class="fas fa-cogs" aria-hidden="true"></i> Engenharia</li>
+                        <li><i class="fas fa-lightbulb" aria-hidden="true"></i> Inovação</li>
+                        <li><i class="fas fa-book-reader" aria-hidden="true"></i> Aprendizado</li>
+                        <li><i class="fas fa-graduation-cap" aria-hidden="true"></i> Educação</li>
+                        <li><i class="fas fa-brain" aria-hidden="true"></i> Conhecimento</li>
+                        <li><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> Ensino</li>
+                        <li><i class="fas fa-globe" aria-hidden="true"></i> Conectividade</li>
+                    </ul>
                 </div>
             </div>
         </section>
-        
+
         <section id="mais-videos" class="section">
-            <h2><i class="fas fa-plus-circle"></i> Mais Vídeos</h2>
+            <h2><i class="fas fa-plus-circle" aria-hidden="true"></i> Mais Vídeos</h2>
             <div class="videos-grid">
-                <div class="video-card">
+                 <div class="video-card">
                     <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/oOdiqIPsk8I" 
-                            title="Balanço de Massa" 
-                            frameborder="0" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wNgCuLqGPyo?si=jr_88xRaTDk1bDsb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                     <div class="video-info">
                         <h3>Balanço de Massa</h3>
                         <p>Passos para resolver exercícios (fluxograma, base de cálculo)</p>
                     </div>
                 </div>
-                
                 <div class="video-card">
                     <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/XkKE99VULNQ" 
-                            title="Operador Nabla" 
-                            frameborder="0" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XkKE99VULNQ?si=N3jkJLLFjpvY67RF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                     <div class="video-info">
                         <h3>Operador Nabla</h3>
                         <p>Conceitos de gradiente, divergente e rotacional</p>
                     </div>
                 </div>
-  
                 <div class="video-card">
                     <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/S9zlJFg7pZY" 
-                            title="Vetores no Plano e no Espaço" 
-                            frameborder="0" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/S9zlJFg7pZY?si=DIXkosa9Ogfe_7LM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                     <div class="video-info">
                         <h3>Vetores no Plano e no Espaço</h3>
                         <p>Conceitos de vetores em duas e três dimensões</p>
                     </div>
                 </div>
-
-                <div class="video-card">
+                 <div class="video-card">
                     <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/BkzckUG7AAM" 
-                            title="Produto Misto - Cálculo Vetorial" 
-                            frameborder="0" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BkzckUG7AAM?si=8fqFv7SEdZa_L4aB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                     <div class="video-info">
                         <h3>Produto Misto - Cálculo Vetorial</h3>
                         <p>Entenda o cálculo do produto misto em vetores</p>
                     </div>
                 </div>
-
                 <div class="video-card">
                     <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/Qz5tyioDh20" 
-                            title="Vetores no Espaço R³: Operações Elementares, Produtos Escalar, Vetorial e Misto" 
-                            frameborder="0" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Qz5tyioDh20?si=CfP8V1iURO6RchAq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                     <div class="video-info">
                         <h3>Vetores no Espaço R³: Operações Elementares, Produtos Escalar, Vetorial e Misto</h3>
                         <p>Explore as operações fundamentais em vetores no espaço tridimensional</p>
                     </div>
                 </div>
-                
                 <div class="video-card">
                     <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/cCR3QEmg5tE" 
-                            title="Teorema de Stokes" 
-                            frameborder="0" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cCR3QEmg5tE?si=qZLkFZ_3SfjzwFhq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                     <div class="video-info">
                         <h3>Teorema de Stokes</h3>
                         <p>Aplicação no cálculo vetorial</p>
                     </div>
                 </div>
-                
                 <div class="video-card">
                     <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/7m11E9Kt87s" 
-                            title="Equações Diferenciais Parciais" 
-                            frameborder="0" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7m11E9Kt87s?si=eROBWKawkZIs9HQ-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                     <div class="video-info">
                         <h3>Equações Diferenciais Parciais</h3>
                         <p>Introdução às EDPs e suas aplicações</p>
                     </div>
                 </div>
-                
                 <div class="video-card">
                     <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/wVp10rmsch0" 
-                            title="Equações Diferenciais Ordinárias" 
-                            frameborder="0" 
-                            allowfullscreen>
-                        </iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tsjABQRimCA?si=sQqvMblUFRrKGZ0S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                    <div class="video-info">
+                        <h3>Superfícies quádricas</h3>
+                        <p>Visualize e compreenda as diferentes formas e equações das superfícies quádricas.</p>
                     </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kqZUFEOAoW4?si=_KyjEYX9zc9gyAh6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                    <div class="video-info">
+                        <h3>Espaços Vetoriais Euclidianos</h3>
+                        <p>Entenda as propriedades e aplicações dos espaços vetoriais euclidianos na álgebra linear.</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AQV5O0Go_YE?si=me8-GbAa_GzdUV7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                    <div class="video-info">
+                        <h3>ELIPSE - CÔNICAS</h3>
+                        <p>Explore a definição, os elementos e a equação da elipse, uma das seções cônicas fundamentais.</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ugCyZw1pTAs?si=0o3xiSpCc9oxgoXr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                    <div class="video-info">
+                        <h3>Superfícies quádricas</h3>
+                        <p>Visualize e compreenda as diferentes formas e equações das superfícies quádricas.</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wVp10rmsch0?si=nYAqApu3ntzY07Ve" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
                     <div class="video-info">
                         <h3>Equações Diferenciais Ordinárias</h3>
                         <p>Fundamentos e resolução de EDOs</p>
@@ -375,31 +288,67 @@
         </div>
     </footer>
 
-    <!-- Script para garantir que os links de ancoragem funcionem suavemente -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Seleciona todos os links que começam com #
-            const links = document.querySelectorAll('a[href^="#"]');
-            
-            // Adiciona event listener para cada link
-            links.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    // Obtém o ID da seção-alvo do href
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetElement = document.getElementById(targetId);
-                    
-                    if (targetElement) {
-                        // Rola até o elemento de destino com comportamento suave
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
+    // Contador inteligente simulado
+    document.addEventListener('DOMContentLoaded', function() {
+        const counterEl = document.getElementById('ga-counter');
+        let baseCount = 50; // Valor inicial
+
+        // Recupera visitas acumuladas (se existir) ou define a inicial
+        if(localStorage.getItem('siteVisits')) {
+            baseCount = parseInt(localStorage.getItem('siteVisits')) || 50; // Garante que é um número
+        } else {
+             // Primeira visita: incrementa o contador inicial e salva
+             baseCount += 1;
+             localStorage.setItem('siteVisits', baseCount);
+        }
+
+        // Atualiza o contador na página
+        if (counterEl) { // Verifica se o elemento existe
+            counterEl.textContent = baseCount.toLocaleString('pt-BR');
+        }
+
+        // Simula crescimento orgânico (opcional) - ATENÇÃO: ISSO É ARTIFICIAL
+        setInterval(() => {
+            // Lê o valor atual do localStorage, incrementa e salva de volta
+            let currentCount = parseInt(localStorage.getItem('siteVisits') || '50');
+            currentCount += Math.floor(Math.random() * 3); // 0-2 visitas/minuto
+            localStorage.setItem('siteVisits', currentCount);
+             if (counterEl) {
+                counterEl.textContent = currentCount.toLocaleString('pt-BR');
+             }
+        }, 60000); // Atualiza a cada 1 minuto
+    });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          // Seleciona todos os links que começam com #
+          const links = document.querySelectorAll('a[href^="#"]');
+
+          // Adiciona event listener para cada link
+          links.forEach(link => {
+              link.addEventListener('click', function(e) {
+                  const hrefAttribute = this.getAttribute('href');
+                   // Verifica se o href é apenas "#" ou aponta para uma ID existente
+                  if (hrefAttribute.length > 1) {
+                      const targetId = hrefAttribute.substring(1);
+                      const targetElement = document.getElementById(targetId);
+
+                      if (targetElement) {
+                          e.preventDefault(); // Previne o comportamento padrão apenas se o alvo existir
+                          // Rola até o elemento de destino com comportamento suave
+                          targetElement.scrollIntoView({
+                              behavior: 'smooth',
+                              block: 'start'
+                          });
+                      }
+                      // Se targetElement não existir, permite o comportamento padrão (útil para links para outras páginas)
+                  }
+                  // Se for href="#" apenas, não faz nada (ou poderia rolar para o topo)
+              });
+          });
+      });
     </script>
 </body>
 </html>
